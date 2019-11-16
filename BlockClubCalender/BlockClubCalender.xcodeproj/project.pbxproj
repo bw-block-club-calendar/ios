@@ -15,6 +15,9 @@
 		DDC8A69A2380416000BD4F95 /* Members.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A6982380416000BD4F95 /* Members.xcdatamodeld */; };
 		DDC8A69C238043CC00BD4F95 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A69B238043CC00BD4F95 /* CoreDataStack.swift */; };
 		DDC8A69E238044F800BD4F95 /* NSManagedContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A69D238044F800BD4F95 /* NSManagedContext.swift */; };
+		DDC8A6A123805D9B00BD4F95 /* CommunityMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A6A023805D9B00BD4F95 /* CommunityMember.swift */; };
+		DDC8A6A323805EB700BD4F95 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A6A223805EB700BD4F95 /* Organization.swift */; };
+		DDC8A6A523805FE400BD4F95 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A6A423805FE400BD4F95 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		DDC8A6992380416000BD4F95 /* Members.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Members.xcdatamodel; sourceTree = "<group>"; };
 		DDC8A69B238043CC00BD4F95 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		DDC8A69D238044F800BD4F95 /* NSManagedContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedContext.swift; sourceTree = "<group>"; };
+		DDC8A6A023805D9B00BD4F95 /* CommunityMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMember.swift; sourceTree = "<group>"; };
+		DDC8A6A223805EB700BD4F95 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		DDC8A6A423805FE400BD4F95 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,9 @@
 			children = (
 				DDC8A6982380416000BD4F95 /* Members.xcdatamodeld */,
 				DDC8A69B238043CC00BD4F95 /* CoreDataStack.swift */,
+				DDC8A6A023805D9B00BD4F95 /* CommunityMember.swift */,
+				DDC8A6A423805FE400BD4F95 /* Event.swift */,
+				DDC8A6A223805EB700BD4F95 /* Organization.swift */,
 			);
 			path = "Core Data";
 			sourceTree = "<group>";
@@ -208,9 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC8A6A523805FE400BD4F95 /* Event.swift in Sources */,
 				DDC8A69E238044F800BD4F95 /* NSManagedContext.swift in Sources */,
+				DDC8A6A123805D9B00BD4F95 /* CommunityMember.swift in Sources */,
 				DDC8A67E23803B4800BD4F95 /* AppDelegate.swift in Sources */,
 				DDC8A68023803B4800BD4F95 /* SceneDelegate.swift in Sources */,
+				DDC8A6A323805EB700BD4F95 /* Organization.swift in Sources */,
 				DDC8A69A2380416000BD4F95 /* Members.xcdatamodeld in Sources */,
 				DDC8A69C238043CC00BD4F95 /* CoreDataStack.swift in Sources */,
 			);
