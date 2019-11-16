@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		DDC8A67E23803B4800BD4F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A67D23803B4800BD4F95 /* AppDelegate.swift */; };
 		DDC8A68023803B4800BD4F95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A67F23803B4800BD4F95 /* SceneDelegate.swift */; };
-		DDC8A68223803B4800BD4F95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A68123803B4800BD4F95 /* ViewController.swift */; };
 		DDC8A68523803B4800BD4F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC8A68323803B4800BD4F95 /* Main.storyboard */; };
 		DDC8A68723803B4800BD4F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC8A68623803B4800BD4F95 /* Assets.xcassets */; };
 		DDC8A68A23803B4800BD4F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC8A68823803B4800BD4F95 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		DDC8A67A23803B4800BD4F95 /* BlockClubCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockClubCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC8A67D23803B4800BD4F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDC8A67F23803B4800BD4F95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DDC8A68123803B4800BD4F95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDC8A68423803B4800BD4F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDC8A68623803B4800BD4F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDC8A68923803B4800BD4F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +54,70 @@
 		DDC8A67C23803B4800BD4F95 /* BlockClubCalender */ = {
 			isa = PBXGroup;
 			children = (
-				DDC8A67D23803B4800BD4F95 /* AppDelegate.swift */,
-				DDC8A67F23803B4800BD4F95 /* SceneDelegate.swift */,
-				DDC8A68123803B4800BD4F95 /* ViewController.swift */,
-				DDC8A68323803B4800BD4F95 /* Main.storyboard */,
+				DDC8A69723803DAA00BD4F95 /* Storyboards */,
+				DDC8A69623803D9400BD4F95 /* Resources */,
+				DDC8A69523803D5900BD4F95 /* Extensions */,
+				DDC8A69423803D2100BD4F95 /* Views */,
+				DDC8A69323803D1100BD4F95 /* Core Data */,
+				DDC8A69223803D0800BD4F95 /* Models */,
+				DDC8A69123803CFD00BD4F95 /* View Controllers */,
 				DDC8A68623803B4800BD4F95 /* Assets.xcassets */,
-				DDC8A68823803B4800BD4F95 /* LaunchScreen.storyboard */,
-				DDC8A68B23803B4800BD4F95 /* Info.plist */,
 			);
 			path = BlockClubCalender;
+			sourceTree = "<group>";
+		};
+		DDC8A69123803CFD00BD4F95 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DDC8A69223803D0800BD4F95 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDC8A69323803D1100BD4F95 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		DDC8A69423803D2100BD4F95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDC8A69523803D5900BD4F95 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DDC8A69623803D9400BD4F95 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDC8A68B23803B4800BD4F95 /* Info.plist */,
+				DDC8A67D23803B4800BD4F95 /* AppDelegate.swift */,
+				DDC8A67F23803B4800BD4F95 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDC8A69723803DAA00BD4F95 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DDC8A68823803B4800BD4F95 /* LaunchScreen.storyboard */,
+				DDC8A68323803B4800BD4F95 /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +191,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDC8A68223803B4800BD4F95 /* ViewController.swift in Sources */,
 				DDC8A67E23803B4800BD4F95 /* AppDelegate.swift in Sources */,
 				DDC8A68023803B4800BD4F95 /* SceneDelegate.swift in Sources */,
 			);
@@ -286,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8P7A77YCZV;
-				INFOPLIST_FILE = BlockClubCalender/Info.plist;
+				INFOPLIST_FILE = BlockClubCalender/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +356,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8P7A77YCZV;
-				INFOPLIST_FILE = BlockClubCalender/Info.plist;
+				INFOPLIST_FILE = BlockClubCalender/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
