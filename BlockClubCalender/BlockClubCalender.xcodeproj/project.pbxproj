@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD6622842383609900604838 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6622832383609900604838 /* LoginScreen.storyboard */; };
+		DD6622882383622C00604838 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6622872383622C00604838 /* Signup.storyboard */; };
 		DDC8A67E23803B4800BD4F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A67D23803B4800BD4F95 /* AppDelegate.swift */; };
 		DDC8A68023803B4800BD4F95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A67F23803B4800BD4F95 /* SceneDelegate.swift */; };
 		DDC8A68523803B4800BD4F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC8A68323803B4800BD4F95 /* Main.storyboard */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD6622832383609900604838 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		DD6622872383622C00604838 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		DDC8A67A23803B4800BD4F95 /* BlockClubCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockClubCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC8A67D23803B4800BD4F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDC8A67F23803B4800BD4F95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +138,8 @@
 			isa = PBXGroup;
 			children = (
 				DDC8A68823803B4800BD4F95 /* LaunchScreen.storyboard */,
+				DD6622832383609900604838 /* LoginScreen.storyboard */,
+				DD6622872383622C00604838 /* Signup.storyboard */,
 				DDC8A68323803B4800BD4F95 /* Main.storyboard */,
 			);
 			path = Storyboards;
@@ -206,6 +212,8 @@
 			files = (
 				DDC8A68A23803B4800BD4F95 /* LaunchScreen.storyboard in Resources */,
 				DDC8A68723803B4800BD4F95 /* Assets.xcassets in Resources */,
+				DD6622842383609900604838 /* LoginScreen.storyboard in Resources */,
+				DD6622882383622C00604838 /* Signup.storyboard in Resources */,
 				DDC8A68523803B4800BD4F95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
