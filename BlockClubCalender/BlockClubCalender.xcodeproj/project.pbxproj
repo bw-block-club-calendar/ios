@@ -7,23 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD6622842383609900604838 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6622832383609900604838 /* LoginScreen.storyboard */; };
+		DD6622882383622C00604838 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6622872383622C00604838 /* Signup.storyboard */; };
+		DD66228C2383996A00604838 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66228B2383996A00604838 /* ProfileViewController.swift */; };
+		DD66229023839B1500604838 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66228F23839B1500604838 /* LoginViewController.swift */; };
+		DD66229223839E3400604838 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66229123839E3400604838 /* SignupViewController.swift */; };
+		DD6622942383A00B00604838 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6622932383A00B00604838 /* EventTableViewCell.swift */; };
+		DD6622962383A02800604838 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6622952383A02800604838 /* EventsTableViewController.swift */; };
+		DD6622982383A3DC00604838 /* EventRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6622972383A3DC00604838 /* EventRepresentation.swift */; };
+		DD8B9F872383A407004DD1D3 /* CommunityMemberRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9F862383A407004DD1D3 /* CommunityMemberRepresentation.swift */; };
+		DD8B9F892383A41C004DD1D3 /* OrganizationRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9F882383A41C004DD1D3 /* OrganizationRepresentation.swift */; };
 		DDC8A67E23803B4800BD4F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A67D23803B4800BD4F95 /* AppDelegate.swift */; };
 		DDC8A68023803B4800BD4F95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A67F23803B4800BD4F95 /* SceneDelegate.swift */; };
-		DDC8A68223803B4800BD4F95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A68123803B4800BD4F95 /* ViewController.swift */; };
 		DDC8A68523803B4800BD4F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC8A68323803B4800BD4F95 /* Main.storyboard */; };
 		DDC8A68723803B4800BD4F95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC8A68623803B4800BD4F95 /* Assets.xcassets */; };
 		DDC8A68A23803B4800BD4F95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC8A68823803B4800BD4F95 /* LaunchScreen.storyboard */; };
+		DDC8A69A2380416000BD4F95 /* Members.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A6982380416000BD4F95 /* Members.xcdatamodeld */; };
+		DDC8A69C238043CC00BD4F95 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A69B238043CC00BD4F95 /* CoreDataStack.swift */; };
+		DDC8A69E238044F800BD4F95 /* NSManagedContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A69D238044F800BD4F95 /* NSManagedContext.swift */; };
+		DDC8A6A123805D9B00BD4F95 /* CommunityMember.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A6A023805D9B00BD4F95 /* CommunityMember.swift */; };
+		DDC8A6A323805EB700BD4F95 /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A6A223805EB700BD4F95 /* Organization.swift */; };
+		DDC8A6A523805FE400BD4F95 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A6A423805FE400BD4F95 /* Event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD6622832383609900604838 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		DD6622872383622C00604838 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
+		DD66228B2383996A00604838 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		DD66228F23839B1500604838 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DD66229123839E3400604838 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
+		DD6622932383A00B00604838 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
+		DD6622952383A02800604838 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
+		DD6622972383A3DC00604838 /* EventRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRepresentation.swift; sourceTree = "<group>"; };
+		DD8B9F862383A407004DD1D3 /* CommunityMemberRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMemberRepresentation.swift; sourceTree = "<group>"; };
+		DD8B9F882383A41C004DD1D3 /* OrganizationRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationRepresentation.swift; sourceTree = "<group>"; };
 		DDC8A67A23803B4800BD4F95 /* BlockClubCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockClubCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC8A67D23803B4800BD4F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDC8A67F23803B4800BD4F95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DDC8A68123803B4800BD4F95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDC8A68423803B4800BD4F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDC8A68623803B4800BD4F95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDC8A68923803B4800BD4F95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDC8A68B23803B4800BD4F95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDC8A6992380416000BD4F95 /* Members.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Members.xcdatamodel; sourceTree = "<group>"; };
+		DDC8A69B238043CC00BD4F95 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		DDC8A69D238044F800BD4F95 /* NSManagedContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSManagedContext.swift; sourceTree = "<group>"; };
+		DDC8A6A023805D9B00BD4F95 /* CommunityMember.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMember.swift; sourceTree = "<group>"; };
+		DDC8A6A223805EB700BD4F95 /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
+		DDC8A6A423805FE400BD4F95 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +86,94 @@
 		DDC8A67C23803B4800BD4F95 /* BlockClubCalender */ = {
 			isa = PBXGroup;
 			children = (
-				DDC8A67D23803B4800BD4F95 /* AppDelegate.swift */,
-				DDC8A67F23803B4800BD4F95 /* SceneDelegate.swift */,
-				DDC8A68123803B4800BD4F95 /* ViewController.swift */,
-				DDC8A68323803B4800BD4F95 /* Main.storyboard */,
+				DDC8A69723803DAA00BD4F95 /* Storyboards */,
+				DDC8A69623803D9400BD4F95 /* Resources */,
+				DDC8A69523803D5900BD4F95 /* Extensions */,
+				DDC8A69423803D2100BD4F95 /* Views */,
+				DDC8A69323803D1100BD4F95 /* Core Data */,
+				DDC8A69F2380462800BD4F95 /* Model Controllers */,
+				DDC8A69223803D0800BD4F95 /* Models */,
+				DDC8A69123803CFD00BD4F95 /* View Controllers */,
 				DDC8A68623803B4800BD4F95 /* Assets.xcassets */,
-				DDC8A68823803B4800BD4F95 /* LaunchScreen.storyboard */,
-				DDC8A68B23803B4800BD4F95 /* Info.plist */,
 			);
 			path = BlockClubCalender;
+			sourceTree = "<group>";
+		};
+		DDC8A69123803CFD00BD4F95 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD66229123839E3400604838 /* SignupViewController.swift */,
+				DD6622952383A02800604838 /* EventsTableViewController.swift */,
+				DD66228F23839B1500604838 /* LoginViewController.swift */,
+				DD66228B2383996A00604838 /* ProfileViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DDC8A69223803D0800BD4F95 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD6622972383A3DC00604838 /* EventRepresentation.swift */,
+				DD8B9F862383A407004DD1D3 /* CommunityMemberRepresentation.swift */,
+				DD8B9F882383A41C004DD1D3 /* OrganizationRepresentation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DDC8A69323803D1100BD4F95 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				DDC8A6982380416000BD4F95 /* Members.xcdatamodeld */,
+				DDC8A69B238043CC00BD4F95 /* CoreDataStack.swift */,
+				DDC8A6A023805D9B00BD4F95 /* CommunityMember.swift */,
+				DDC8A6A423805FE400BD4F95 /* Event.swift */,
+				DDC8A6A223805EB700BD4F95 /* Organization.swift */,
+			);
+			path = "Core Data";
+			sourceTree = "<group>";
+		};
+		DDC8A69423803D2100BD4F95 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD6622932383A00B00604838 /* EventTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDC8A69523803D5900BD4F95 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DDC8A69D238044F800BD4F95 /* NSManagedContext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DDC8A69623803D9400BD4F95 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDC8A68B23803B4800BD4F95 /* Info.plist */,
+				DDC8A67D23803B4800BD4F95 /* AppDelegate.swift */,
+				DDC8A67F23803B4800BD4F95 /* SceneDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDC8A69723803DAA00BD4F95 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DDC8A68823803B4800BD4F95 /* LaunchScreen.storyboard */,
+				DD6622832383609900604838 /* LoginScreen.storyboard */,
+				DD6622872383622C00604838 /* Signup.storyboard */,
+				DDC8A68323803B4800BD4F95 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DDC8A69F2380462800BD4F95 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +236,8 @@
 			files = (
 				DDC8A68A23803B4800BD4F95 /* LaunchScreen.storyboard in Resources */,
 				DDC8A68723803B4800BD4F95 /* Assets.xcassets in Resources */,
+				DD6622842383609900604838 /* LoginScreen.storyboard in Resources */,
+				DD6622882383622C00604838 /* Signup.storyboard in Resources */,
 				DDC8A68523803B4800BD4F95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +249,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDC8A68223803B4800BD4F95 /* ViewController.swift in Sources */,
+				DD66229023839B1500604838 /* LoginViewController.swift in Sources */,
+				DD6622962383A02800604838 /* EventsTableViewController.swift in Sources */,
+				DDC8A6A523805FE400BD4F95 /* Event.swift in Sources */,
+				DD6622982383A3DC00604838 /* EventRepresentation.swift in Sources */,
+				DDC8A69E238044F800BD4F95 /* NSManagedContext.swift in Sources */,
+				DD66228C2383996A00604838 /* ProfileViewController.swift in Sources */,
+				DD8B9F892383A41C004DD1D3 /* OrganizationRepresentation.swift in Sources */,
+				DD6622942383A00B00604838 /* EventTableViewCell.swift in Sources */,
+				DDC8A6A123805D9B00BD4F95 /* CommunityMember.swift in Sources */,
 				DDC8A67E23803B4800BD4F95 /* AppDelegate.swift in Sources */,
 				DDC8A68023803B4800BD4F95 /* SceneDelegate.swift in Sources */,
+				DD66229223839E3400604838 /* SignupViewController.swift in Sources */,
+				DDC8A6A323805EB700BD4F95 /* Organization.swift in Sources */,
+				DDC8A69A2380416000BD4F95 /* Members.xcdatamodeld in Sources */,
+				DDC8A69C238043CC00BD4F95 /* CoreDataStack.swift in Sources */,
+				DD8B9F872383A407004DD1D3 /* CommunityMemberRepresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +410,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8P7A77YCZV;
-				INFOPLIST_FILE = BlockClubCalender/Info.plist;
+				INFOPLIST_FILE = BlockClubCalender/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +428,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8P7A77YCZV;
-				INFOPLIST_FILE = BlockClubCalender/Info.plist;
+				INFOPLIST_FILE = BlockClubCalender/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,6 +462,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DDC8A6982380416000BD4F95 /* Members.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DDC8A6992380416000BD4F95 /* Members.xcdatamodel */,
+			);
+			currentVersion = DDC8A6992380416000BD4F95 /* Members.xcdatamodel */;
+			path = Members.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DDC8A67223803B4800BD4F95 /* Project object */;
 }
