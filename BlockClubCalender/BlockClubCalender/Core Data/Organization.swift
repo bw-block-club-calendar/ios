@@ -11,6 +11,17 @@ import CoreData
 
 extension Organization {
     
+    var organizationRepresentation: OrganizationRepresentation? {
+        guard let username = username,
+          let password = password,
+          let email = email,
+            let businessName = businessName,
+          let streetAddress = streetAddress,
+        let city = city else { return nil }
+        
+        return OrganizationRepresentation(username: username, password: password, email: email, businessName: businessName, streetAddress: streetAddress, city: city, zipcode: Int(zipcode))
+    }
+    
     convenience init(username: String,
                      password: String,
                      email: String,
@@ -18,7 +29,7 @@ extension Organization {
                      streetAddress: String,
                      city: String,
                      zipcode: Int,
-                     context: NSManagedObjectContext){
+                     context: NSManagedObjectContext = CoreDataStack.shared.mainContext){
           
           self.init(context: context)
             
@@ -30,5 +41,11 @@ extension Organization {
         self.city = city
         self.zipcode = Int64(zipcode)
         
+      }
+    
+  @discardableResult convenience init?(organizationRepresentation: OrganizationRepresentation,
+                        context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
+          
+        self.init(context: context)
       }
 }
