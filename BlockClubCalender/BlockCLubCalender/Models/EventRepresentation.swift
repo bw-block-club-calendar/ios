@@ -11,8 +11,7 @@ import Foundation
 struct EventRepresentation: Codable {
     
     let eventAddress: String
-    let eventDate: String
+    let eventDate: Date
     let description: String
-    let location: String
     let title: String
 }

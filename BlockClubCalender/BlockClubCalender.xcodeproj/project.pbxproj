@@ -15,8 +15,13 @@
 		DD6622942383A00B00604838 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6622932383A00B00604838 /* EventTableViewCell.swift */; };
 		DD6622962383A02800604838 /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6622952383A02800604838 /* EventsTableViewController.swift */; };
 		DD6622982383A3DC00604838 /* EventRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6622972383A3DC00604838 /* EventRepresentation.swift */; };
+		DD7779DE23849C5D00AABF66 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7779DD23849C5D00AABF66 /* EventDetailViewController.swift */; };
 		DD8B9F872383A407004DD1D3 /* CommunityMemberRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9F862383A407004DD1D3 /* CommunityMemberRepresentation.swift */; };
 		DD8B9F892383A41C004DD1D3 /* OrganizationRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9F882383A41C004DD1D3 /* OrganizationRepresentation.swift */; };
+		DDC21F6123846A9300C5795A /* EventController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC21F6023846A9300C5795A /* EventController.swift */; };
+		DDC21F6323846ABE00C5795A /* CommunityMemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC21F6223846ABE00C5795A /* CommunityMemberController.swift */; };
+		DDC21F6523846ACC00C5795A /* OrganizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC21F6423846ACC00C5795A /* OrganizationController.swift */; };
+		DDC21F6723847AF800C5795A /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC21F6623847AF800C5795A /* AddEventViewController.swift */; };
 		DDC8A67E23803B4800BD4F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A67D23803B4800BD4F95 /* AppDelegate.swift */; };
 		DDC8A68023803B4800BD4F95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A67F23803B4800BD4F95 /* SceneDelegate.swift */; };
 		DDC8A68523803B4800BD4F95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC8A68323803B4800BD4F95 /* Main.storyboard */; };
@@ -39,8 +44,13 @@
 		DD6622932383A00B00604838 /* EventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		DD6622952383A02800604838 /* EventsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		DD6622972383A3DC00604838 /* EventRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRepresentation.swift; sourceTree = "<group>"; };
+		DD7779DD23849C5D00AABF66 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		DD8B9F862383A407004DD1D3 /* CommunityMemberRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMemberRepresentation.swift; sourceTree = "<group>"; };
 		DD8B9F882383A41C004DD1D3 /* OrganizationRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationRepresentation.swift; sourceTree = "<group>"; };
+		DDC21F6023846A9300C5795A /* EventController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventController.swift; sourceTree = "<group>"; };
+		DDC21F6223846ABE00C5795A /* CommunityMemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMemberController.swift; sourceTree = "<group>"; };
+		DDC21F6423846ACC00C5795A /* OrganizationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganizationController.swift; sourceTree = "<group>"; };
+		DDC21F6623847AF800C5795A /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		DDC8A67A23803B4800BD4F95 /* BlockClubCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockClubCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC8A67D23803B4800BD4F95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDC8A67F23803B4800BD4F95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,10 +77,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DDC21F5F2384698200C5795A /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		DDC8A67123803B4800BD4F95 = {
 			isa = PBXGroup;
 			children = (
-				DDC8A67C23803B4800BD4F95 /* BlockClubCalender */,
+				DDC8A67C23803B4800BD4F95 /* BlockCLubCalender */,
 				DDC8A67B23803B4800BD4F95 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,9 +100,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DDC8A67C23803B4800BD4F95 /* BlockClubCalender */ = {
+		DDC8A67C23803B4800BD4F95 /* BlockCLubCalender */ = {
 			isa = PBXGroup;
 			children = (
+				DDC21F5F2384698200C5795A /* API */,
 				DDC8A69723803DAA00BD4F95 /* Storyboards */,
 				DDC8A69623803D9400BD4F95 /* Resources */,
 				DDC8A69523803D5900BD4F95 /* Extensions */,
@@ -96,7 +114,7 @@
 				DDC8A69123803CFD00BD4F95 /* View Controllers */,
 				DDC8A68623803B4800BD4F95 /* Assets.xcassets */,
 			);
-			path = BlockClubCalender;
+			path = BlockCLubCalender;
 			sourceTree = "<group>";
 		};
 		DDC8A69123803CFD00BD4F95 /* View Controllers */ = {
@@ -104,6 +122,8 @@
 			children = (
 				DD66229123839E3400604838 /* SignupViewController.swift */,
 				DD6622952383A02800604838 /* EventsTableViewController.swift */,
+				DD7779DD23849C5D00AABF66 /* EventDetailViewController.swift */,
+				DDC21F6623847AF800C5795A /* AddEventViewController.swift */,
 				DD66228F23839B1500604838 /* LoginViewController.swift */,
 				DD66228B2383996A00604838 /* ProfileViewController.swift */,
 			);
@@ -172,6 +192,9 @@
 		DDC8A69F2380462800BD4F95 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DDC21F6023846A9300C5795A /* EventController.swift */,
+				DDC21F6223846ABE00C5795A /* CommunityMemberController.swift */,
+				DDC21F6423846ACC00C5795A /* OrganizationController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -250,21 +273,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD66229023839B1500604838 /* LoginViewController.swift in Sources */,
+				DDC21F6723847AF800C5795A /* AddEventViewController.swift in Sources */,
 				DD6622962383A02800604838 /* EventsTableViewController.swift in Sources */,
 				DDC8A6A523805FE400BD4F95 /* Event.swift in Sources */,
 				DD6622982383A3DC00604838 /* EventRepresentation.swift in Sources */,
 				DDC8A69E238044F800BD4F95 /* NSManagedContext.swift in Sources */,
 				DD66228C2383996A00604838 /* ProfileViewController.swift in Sources */,
 				DD8B9F892383A41C004DD1D3 /* OrganizationRepresentation.swift in Sources */,
+				DDC21F6323846ABE00C5795A /* CommunityMemberController.swift in Sources */,
 				DD6622942383A00B00604838 /* EventTableViewCell.swift in Sources */,
 				DDC8A6A123805D9B00BD4F95 /* CommunityMember.swift in Sources */,
 				DDC8A67E23803B4800BD4F95 /* AppDelegate.swift in Sources */,
+				DD7779DE23849C5D00AABF66 /* EventDetailViewController.swift in Sources */,
+				DDC21F6523846ACC00C5795A /* OrganizationController.swift in Sources */,
 				DDC8A68023803B4800BD4F95 /* SceneDelegate.swift in Sources */,
 				DD66229223839E3400604838 /* SignupViewController.swift in Sources */,
 				DDC8A6A323805EB700BD4F95 /* Organization.swift in Sources */,
 				DDC8A69A2380416000BD4F95 /* Members.xcdatamodeld in Sources */,
 				DDC8A69C238043CC00BD4F95 /* CoreDataStack.swift in Sources */,
 				DD8B9F872383A407004DD1D3 /* CommunityMemberRepresentation.swift in Sources */,
+				DDC21F6123846A9300C5795A /* EventController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

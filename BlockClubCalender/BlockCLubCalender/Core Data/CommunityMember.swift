@@ -43,7 +43,7 @@ extension CommunityMember {
         self.zipcode = Int64(zipcode)
     }
     
-    convenience init?(communityMemberRepresentation: CommunityMemberRepresentation,
+    @discardableResult convenience init?(communityMemberRepresentation: CommunityMemberRepresentation,
                       context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         
         self.init(username: communityMemberRepresentation.username,

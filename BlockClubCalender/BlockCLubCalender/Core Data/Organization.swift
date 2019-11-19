@@ -46,6 +46,12 @@ extension Organization {
   @discardableResult convenience init?(organizationRepresentation: OrganizationRepresentation,
                         context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
           
-        self.init(context: context)
+        self.init(username: organizationRepresentation.username,
+                       password: organizationRepresentation.password,
+                       email: organizationRepresentation.email,
+                       businessName: organizationRepresentation.businessName,
+                       streetAddress: organizationRepresentation.streetAddress,
+                       city: organizationRepresentation.city,
+                       zipcode: organizationRepresentation.zipcode)
       }
 }
