@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Signup View Controller-->
         <scene sceneID="ArK-6e-hLS">
             <objects>
-                <viewController id="IG3-Th-Fe2" sceneMemberID="viewController">
+                <viewController id="IG3-Th-Fe2" customClass="SignupViewController" customModule="BlockClubCalender" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dBQ-cv-7Kz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,7 +77,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qW-df-fye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1031.8840579710145" y="99.776785714285708"/>
+            <point key="canvasLocation" x="936" y="100"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Ss2-zG-a8S">
@@ -149,7 +149,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Buv-3x-n24" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1757" y="100"/>
+            <point key="canvasLocation" x="1736" y="100"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LZi-Tl-awy">
