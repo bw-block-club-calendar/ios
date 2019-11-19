@@ -11,10 +11,22 @@ import CoreData
 
 extension Event {
     
-    convenience init(eventAddress: String,
+  var eventRepresentation: EventRepresentation? {
+        
+        guard let eventAddress = eventAddress,
+              let eventDate = eventDate,
+             let description = eventDescription,
+            let title = title else { return nil }
+        
+        return EventRepresentation(eventAddress: eventAddress,
+                                   eventDate: eventDate,
+                                   description: description,
+                                   title: title)
+    }
+    
+     convenience init(eventAddress: String,
                      eventDate: Date,
                      eventDescription:String,
-                     geoLocation: String,
                      title: String,
                      context: NSManagedObjectContext){
         
@@ -24,7 +36,6 @@ extension Event {
         self.eventDate = eventDate
         self.eventDescription = eventDescription
         self.title = title
-        self.geoLocation = geoLocation
         
     }
 }

@@ -12,7 +12,6 @@
         <attribute name="eventAddress" optional="YES" attributeType="String"/>
         <attribute name="eventDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="eventDescription" optional="YES" attributeType="String"/>
-        <attribute name="geoLocation" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Organization" representedClassName="Organization" syncable="YES" codeGenerationType="class">
@@ -26,7 +25,7 @@
     </entity>
     <elements>
         <element name="CommunityMember" positionX="-63" positionY="-18" width="128" height="133"/>
+        <element name="Event" positionX="-36" positionY="54" width="128" height="103"/>
         <element name="Organization" positionX="-54" positionY="-9" width="128" height="148"/>
-        <element name="Event" positionX="-36" positionY="54" width="128" height="118"/>
     </elements>
 </model>
