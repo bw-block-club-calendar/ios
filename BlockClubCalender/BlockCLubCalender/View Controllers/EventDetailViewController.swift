@@ -15,15 +15,34 @@ class EventDetailViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var descriptionTextView: UITextView!
-    
+    var event: Event? {
+        didSet {
+            updateViews()
+        }
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+       updateViews()
     }
     
+    private func updateViews() {
+        guard isViewLoaded else { return }
+        guard let event = event else { return configureViews()}
+        titleLabel.text = event.title
+        descriptionTextView.text = event.eventDescription
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "mm-dd-yyyy HH:mm"
+        
+        guard let date = event.eventDate else  { return }
+        let formatedDate = dateFormatter.string(from: date)
+        dateLabel.text = "\(formatedDate)"
+    }
 
-
+    private func configureViews() {
+        dateLabel.text = ""
+        titleLabel.text = ""
+        descriptionTextView.text = ""
+    }
 }

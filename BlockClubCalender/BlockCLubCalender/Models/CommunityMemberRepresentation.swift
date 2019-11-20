@@ -13,8 +13,8 @@ struct CommunityMemberRepresentation: Codable {
     let username: String
     let password: String
     let email: String
-    let streetAddress: String
     let city: String
-    let zipcode: Int 
+    let isBusiness: Bool
+    let events: [EventRepresentation]
 }
 

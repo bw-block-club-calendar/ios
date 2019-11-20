@@ -10,21 +10,30 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    //MARK: - Properties
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var emailLabel1: UILabel!
+    var memberController = MemberController()
+    
+    //MARK: - lifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        configureViews()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func configureViews() {
+        nameLabel.isHidden = true
+        emailLabel.isHidden = true
+        titleLabel.isHidden = true
+        emailLabel1.isHidden = true
     }
-    */
-
+  
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "LoginSegue" {
+            guard let LoginVC = segue.destination as? LoginViewController else { return }
+            LoginVC.memberController = memberController
+        }
+    }
 }
