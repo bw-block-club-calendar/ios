@@ -3,29 +3,22 @@
     <entity name="CommunityMember" representedClassName="CommunityMember" syncable="YES" codeGenerationType="class">
         <attribute name="city" optional="YES" attributeType="String"/>
         <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="isBusiness" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="password" optional="YES" attributeType="String"/>
         <attribute name="streetAddress" optional="YES" attributeType="String"/>
         <attribute name="username" optional="YES" attributeType="String"/>
         <attribute name="zipcode" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Event" inverseName="communityMember" inverseEntity="Event"/>
     </entity>
     <entity name="Event" representedClassName="Event" syncable="YES" codeGenerationType="class">
         <attribute name="eventAddress" optional="YES" attributeType="String"/>
         <attribute name="eventDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="eventDescription" optional="YES" attributeType="String"/>
         <attribute name="title" optional="YES" attributeType="String"/>
-    </entity>
-    <entity name="Organization" representedClassName="Organization" syncable="YES" codeGenerationType="class">
-        <attribute name="businessName" optional="YES" attributeType="String"/>
-        <attribute name="city" optional="YES" attributeType="String"/>
-        <attribute name="email" optional="YES" attributeType="String"/>
-        <attribute name="password" optional="YES" attributeType="String"/>
-        <attribute name="streetAddress" optional="YES" attributeType="String"/>
-        <attribute name="username" optional="YES" attributeType="String"/>
-        <attribute name="zipcode" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="communityMember" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CommunityMember" inverseName="events" inverseEntity="CommunityMember"/>
     </entity>
     <elements>
-        <element name="CommunityMember" positionX="-63" positionY="-18" width="128" height="133"/>
-        <element name="Event" positionX="-36" positionY="54" width="128" height="103"/>
-        <element name="Organization" positionX="-54" positionY="-9" width="128" height="148"/>
+        <element name="CommunityMember" positionX="-63" positionY="-18" width="128" height="163"/>
+        <element name="Event" positionX="-36" positionY="54" width="128" height="118"/>
     </elements>
 </model>

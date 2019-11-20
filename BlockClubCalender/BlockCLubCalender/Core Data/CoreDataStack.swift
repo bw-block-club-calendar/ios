@@ -15,7 +15,7 @@ class CoreDataStack {
     static let shared = CoreDataStack()
     
     lazy var container: NSPersistentContainer = {
-        let container = NSPersistentContainer(name: "Members")
+        let container = NSPersistentContainer(name: "BlockClubCalender")
         container.loadPersistentStores { (_, error) in
             if let error = error as NSError? {
                 NSLog("failed to load from persistence store: \(error.localizedDescription)")

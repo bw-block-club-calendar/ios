@@ -11,31 +11,15 @@ import CoreData
 
 extension Event {
     
-  var eventRepresentation: EventRepresentation? {
-        
-        guard let eventAddress = eventAddress,
-              let eventDate = eventDate,
-             let description = eventDescription,
-            let title = title else { return nil }
-        
-        return EventRepresentation(eventAddress: eventAddress,
-                                   eventDate: eventDate,
-                                   description: description,
-                                   title: title)
-    }
-    
-     convenience init(eventAddress: String,
+    convenience init(address: String,
                      eventDate: Date,
-                     eventDescription:String,
-                     title: String,
-                     context: NSManagedObjectContext){
-        
+                     eventDescription: String,
+                     title : String,
+                     context: NSManagedObjectContext = CoreDataStack.shared.mainContext) {
         self.init(context:context)
-        
-        self.eventAddress = eventAddress
+        self.address = address
         self.eventDate = eventDate
         self.eventDescription = eventDescription
         self.title = title
-        
     }
 }
