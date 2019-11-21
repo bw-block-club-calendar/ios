@@ -103,6 +103,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="person.fill" catalog="system" id="TAw-jM-fhB"/>
                     <connections>
+                        <outlet property="SigninButton" destination="cN2-iz-vke" id="amP-uZ-Xn3"/>
                         <outlet property="emailLabel" destination="o65-KZ-96a" id="CSt-1R-mSi"/>
                         <outlet property="emailLabel1" destination="NVD-1d-JAI" id="v7R-zY-sQJ"/>
                         <outlet property="nameLabel" destination="dyd-Gt-h5G" id="JPG-Dz-a3X"/>
@@ -225,19 +226,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="t3Y-O1-OAq">
-                                <rect key="frame" x="20" y="40" width="374" height="107.5"/>
+                                <rect key="frame" x="20" y="40" width="374" height="108.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="a58-gk-23W">
-                                        <rect key="frame" x="0.0" y="0.0" width="255" height="41"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="262" height="42"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aCX-gs-vOc">
-                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="41"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="42"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New year party" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oy6-4Q-w33">
-                                                <rect key="frame" x="92.5" y="0.0" width="162.5" height="41"/>
+                                                <rect key="frame" x="99.5" y="0.0" width="162.5" height="42"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -245,16 +246,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oEA-g4-abx">
-                                        <rect key="frame" x="0.0" y="74" width="310.5" height="33.5"/>
+                                        <rect key="frame" x="0.0" y="75" width="314.5" height="33.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="when:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKS-89-dFz">
-                                                <rect key="frame" x="0.0" y="0.0" width="73.5" height="33.5"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="77.5" height="33.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 1st, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vah-bX-Wq5">
-                                                <rect key="frame" x="93.5" y="0.0" width="217" height="33.5"/>
+                                                <rect key="frame" x="97.5" y="0.0" width="217" height="33.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -264,7 +265,7 @@
                                 </subviews>
                             </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y8Q-OH-f4H">
-                                <rect key="frame" x="20" y="221" width="374" height="199.5"/>
+                                <rect key="frame" x="20" y="222" width="374" height="199.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="y8Q-OH-f4H" secondAttribute="height" multiplier="15:8" id="7QR-ku-dJJ"/>
@@ -275,8 +276,8 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="36T-JB-Uz6">
-                                <rect key="frame" x="20" y="167.5" width="374" height="33.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <rect key="frame" x="20" y="168.5" width="374" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

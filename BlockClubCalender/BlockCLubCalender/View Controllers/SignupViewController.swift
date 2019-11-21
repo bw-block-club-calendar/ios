@@ -24,22 +24,23 @@ class SignupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureViews()
     }
     
-    
+    private func configureViews() {
+        navigationController?.isNavigationBarHidden = true 
+    }
     //MARK: - Actions
     @IBAction func doneButton(_ sender: UIButton) {
         guard let name = nameTextfield.text,
             let email = emailTextfield.text,
             let username = usernameTextfield.text,
-            let password = passwordTextField.text,
-            let city = cityTextField.text else { return }
+            let password = passwordTextField.text else { return }
         
         if isBusiness.selectedSegmentIndex == 0 {
-            memberController?.Register(username: username, password: password, email: email, isBusiness: true, city: city )
-            print(isBusiness.selectedSegmentIndex)
+            memberController?.Register(name, username: username, password: password, email: email )
         } else {
-            memberController?.Register(username: username, password: password, email: email, isBusiness: false, city: city )
+            memberController?.Register(name, username: username, password: password, email: email)
         }
         dismiss(animated: true, completion: nil)
     }

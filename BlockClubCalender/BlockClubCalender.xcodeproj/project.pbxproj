@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD34165B2385F3E300359AC1 /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34165A2385F3E300359AC1 /* BearerToken.swift */; };
 		DD6622842383609900604838 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6622832383609900604838 /* LoginScreen.storyboard */; };
 		DD6622882383622C00604838 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6622872383622C00604838 /* Signup.storyboard */; };
 		DD66228C2383996A00604838 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD66228B2383996A00604838 /* ProfileViewController.swift */; };
@@ -17,8 +18,8 @@
 		DD6622982383A3DC00604838 /* EventRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD6622972383A3DC00604838 /* EventRepresentation.swift */; };
 		DD7779DE23849C5D00AABF66 /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7779DD23849C5D00AABF66 /* EventDetailViewController.swift */; };
 		DD7779E12384FBBD00AABF66 /* BlockClubCalender.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD7779DF2384FBBD00AABF66 /* BlockClubCalender.xcdatamodeld */; };
-		DD7779E32385010000AABF66 /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7779E22385010000AABF66 /* Member.swift */; };
-		DD8B9F872383A407004DD1D3 /* CommunityMemberRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9F862383A407004DD1D3 /* CommunityMemberRepresentation.swift */; };
+		DDAD1EB72386E35E00E348D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD1EB62386E35E00E348D1 /* User.swift */; };
+		DDAD1EBB2386EB7200E348D1 /* UserRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAD1EBA2386EB7200E348D1 /* UserRepresentation.swift */; };
 		DDC21F6323846ABE00C5795A /* CommunityMemberController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC21F6223846ABE00C5795A /* CommunityMemberController.swift */; };
 		DDC21F6723847AF800C5795A /* AddEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC21F6623847AF800C5795A /* AddEventViewController.swift */; };
 		DDC8A67E23803B4800BD4F95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A67D23803B4800BD4F95 /* AppDelegate.swift */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD34165A2385F3E300359AC1 /* BearerToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
 		DD6622832383609900604838 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		DD6622872383622C00604838 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
 		DD66228B2383996A00604838 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -42,8 +44,8 @@
 		DD6622972383A3DC00604838 /* EventRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRepresentation.swift; sourceTree = "<group>"; };
 		DD7779DD23849C5D00AABF66 /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		DD7779E02384FBBD00AABF66 /* BlockClubCalender.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BlockClubCalender.xcdatamodel; sourceTree = "<group>"; };
-		DD7779E22385010000AABF66 /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
-		DD8B9F862383A407004DD1D3 /* CommunityMemberRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMemberRepresentation.swift; sourceTree = "<group>"; };
+		DDAD1EB62386E35E00E348D1 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DDAD1EBA2386EB7200E348D1 /* UserRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepresentation.swift; sourceTree = "<group>"; };
 		DDC21F6223846ABE00C5795A /* CommunityMemberController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityMemberController.swift; sourceTree = "<group>"; };
 		DDC21F6623847AF800C5795A /* AddEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewController.swift; sourceTree = "<group>"; };
 		DDC8A67A23803B4800BD4F95 /* BlockClubCalender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockClubCalender.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,13 +71,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DDC21F5F2384698200C5795A /* API */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
 		DDC8A67123803B4800BD4F95 = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +90,6 @@
 		DDC8A67C23803B4800BD4F95 /* BlockCLubCalender */ = {
 			isa = PBXGroup;
 			children = (
-				DDC21F5F2384698200C5795A /* API */,
 				DDC8A69723803DAA00BD4F95 /* Storyboards */,
 				DDC8A69623803D9400BD4F95 /* Resources */,
 				DDC8A69523803D5900BD4F95 /* Extensions */,
@@ -126,7 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				DD6622972383A3DC00604838 /* EventRepresentation.swift */,
-				DD8B9F862383A407004DD1D3 /* CommunityMemberRepresentation.swift */,
+				DDAD1EBA2386EB7200E348D1 /* UserRepresentation.swift */,
+				DD34165A2385F3E300359AC1 /* BearerToken.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -136,7 +131,7 @@
 			children = (
 				DD7779DF2384FBBD00AABF66 /* BlockClubCalender.xcdatamodeld */,
 				DDC8A69B238043CC00BD4F95 /* CoreDataStack.swift */,
-				DD7779E22385010000AABF66 /* Member.swift */,
+				DDAD1EB62386E35E00E348D1 /* User.swift */,
 				DDC8A6A423805FE400BD4F95 /* Event.swift */,
 			);
 			path = "Core Data";
@@ -260,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD34165B2385F3E300359AC1 /* BearerToken.swift in Sources */,
 				DD66229023839B1500604838 /* LoginViewController.swift in Sources */,
 				DD7779E12384FBBD00AABF66 /* BlockClubCalender.xcdatamodeld in Sources */,
 				DDC21F6723847AF800C5795A /* AddEventViewController.swift in Sources */,
@@ -272,11 +268,11 @@
 				DD6622942383A00B00604838 /* EventTableViewCell.swift in Sources */,
 				DDC8A67E23803B4800BD4F95 /* AppDelegate.swift in Sources */,
 				DD7779DE23849C5D00AABF66 /* EventDetailViewController.swift in Sources */,
-				DD7779E32385010000AABF66 /* Member.swift in Sources */,
 				DDC8A68023803B4800BD4F95 /* SceneDelegate.swift in Sources */,
 				DD66229223839E3400604838 /* SignupViewController.swift in Sources */,
 				DDC8A69C238043CC00BD4F95 /* CoreDataStack.swift in Sources */,
-				DD8B9F872383A407004DD1D3 /* CommunityMemberRepresentation.swift in Sources */,
+				DDAD1EBB2386EB7200E348D1 /* UserRepresentation.swift in Sources */,
+				DDAD1EB72386E35E00E348D1 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
