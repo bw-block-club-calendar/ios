@@ -11,13 +11,11 @@ import UIKit
 class EventTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
-    
     var event: Event? {
         didSet {
             updateViews()
         }
     }
-    
     private func updateViews() {
         guard let event = event else { return }
         titleLabel.text = event.title

@@ -9,13 +9,11 @@
 import Foundation
 import CoreData
 class MemberController {
-    
     //MARK: - Properties
     static var bearer: BearerToken?
     static var user: User?
     let baseURL = URL(string: "https://blockclubcal.herokuapp.com/api/")!
-    
-    
+        
     //MARK: - C.R.U.D METHODS
 
       ///create
@@ -31,7 +29,6 @@ class MemberController {
                         password: password,
                         email: email,
                         context: CoreDataStack.shared.mainContext)
-           
          let registerURL = baseURL.appendingPathComponent("auth").appendingPathComponent("register")
            var request = URLRequest(url: registerURL)
            request.httpMethod = "POST"
@@ -56,9 +53,7 @@ class MemberController {
                    print("error decoding token: \(error.localizedDescription)")
                    completion(error)
                }
-               
-               guard let data = data else { return completion(NSError())}
-               
+               guard let data = data else { return completion(NSError())}               
                do {
                    let decoder = JSONDecoder()
                    MemberController.bearer = try decoder.decode(BearerToken.self, from: data)
@@ -81,7 +76,6 @@ extension MemberController {
     func signOut() {
         MemberController.bearer = nil
     }
-    
     func loginUser(username: String, password: String, completion: @escaping(Error?) -> Void){
         let registerURL = baseURL.appendingPathComponent("auth")
                  .appendingPathComponent("login")
@@ -97,19 +91,16 @@ extension MemberController {
                     """
                     let jsonData = json.data(using: .utf8)
                     request.httpBody = jsonData
-          
-          URLSession.shared.dataTask(with: request) { ( data , response, error) in
+          URLSession.shared.dataTask(with: request) { ( data, response, error) in
             if let response = response as? HTTPURLResponse, response.statusCode != 200 {
                   print(response.statusCode)
                 completion(NSError(domain: "", code: response.statusCode, userInfo: nil))
                 return
               }
-              
               if let error = error {
                   completion(error)
               }
               guard let data = data else { return completion(NSError())}
-              
               do {
                   let decoder = JSONDecoder()
                 MemberController.self.bearer = try decoder.decode(BearerToken.self, from: data)
@@ -118,7 +109,6 @@ extension MemberController {
               }
             completion(nil)
           }.resume()
-    
       }
 
 }

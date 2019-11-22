@@ -12,7 +12,7 @@ extension URLSession: NetworkDataLoader {
     func loadData(from request: URLRequest, completion: @escaping (Data?, Error?) -> Void) {
         let task = self.dataTask(with: request) { (data, _, error) in
             DispatchQueue.main.sync {
-                completion(data,error)
+                completion(data, error)
             }
         }
         task.resume()
@@ -20,7 +20,7 @@ extension URLSession: NetworkDataLoader {
     func loadData(from url: URL, completion: @escaping (Data?, Error?) -> Void) {
         let task = self.dataTask(with: url) { (data, _, error) in
             DispatchQueue.main.sync {
-                completion(data,error)
+                completion(data, error)
             }
         }
         task.resume()

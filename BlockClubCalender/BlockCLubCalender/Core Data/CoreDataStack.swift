@@ -10,10 +10,8 @@ import Foundation
 import CoreData
 
 class CoreDataStack {
-    
-    //MARK: - properties
+    //MARK: properties
     static let shared = CoreDataStack()
-    
     lazy var container: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "BlockClubCalender")
         container.loadPersistentStores { (_, error) in
@@ -23,7 +21,6 @@ class CoreDataStack {
         }
         return container
     }()
-    
     var mainContext: NSManagedObjectContext {
         return container.viewContext
     }

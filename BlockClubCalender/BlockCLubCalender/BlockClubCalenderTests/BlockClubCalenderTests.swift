@@ -19,7 +19,6 @@ class BlockClubCalenderTests: XCTestCase {
 //        app.launch()
 //    }
 
-    
 //    func testBaseURL() {
 //        let bCCController = CommunityMemberController()
 //        
@@ -33,7 +32,6 @@ class BlockClubCalenderTests: XCTestCase {
                    }
                }
     }
-    
     func testDecodingGoodData() {
         do {
             let dataURL = Bundle.main.url(forResource: "GoodMockData", withExtension: "json")!
@@ -44,7 +42,6 @@ class BlockClubCalenderTests: XCTestCase {
             NSLog("Error")
         }
     }
-    
     func testDecodingBadData() {
         do {
             let badDataURL = Bundle.main.url(forResource: "BadMockData", withExtension: "json")!
@@ -55,14 +52,12 @@ class BlockClubCalenderTests: XCTestCase {
             NSLog("Error")
         }
     }
-    
     func testNumberOfSections() {
         let eventsTableViewController = EventsTableViewController()
         let sectionInfo = eventsTableViewController.fetchedResultsController.sections
         let numberOfSections = sectionInfo?.count
         XCTAssertEqual(numberOfSections, 1)
     }
-    
     func testNumberOfRows() {
         let eventsTableViewController = EventsTableViewController()
         let sectionInfo = eventsTableViewController.fetchedResultsController.sections

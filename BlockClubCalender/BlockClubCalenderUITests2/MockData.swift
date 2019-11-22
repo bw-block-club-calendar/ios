@@ -123,7 +123,6 @@ let goodEventData = """
 ]
 """.data(using: .utf8)
 
-
 let badEventData = """
 {
   "iD": 4,
@@ -192,5 +191,3 @@ Collapse
 Let me know if you need anything else
 
 """.data(using: .utf8)
-
-

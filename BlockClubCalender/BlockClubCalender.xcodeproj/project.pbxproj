@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1659CDAB794DD9EA2FCDBBB0 /* Pods_BlockClubCalender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56815C7842927F229CB0286 /* Pods_BlockClubCalender.framework */; };
 		1C9F26D0238881D00090A955 /* BlockClubCalenderTests in Resources */ = {isa = PBXBuildFile; fileRef = 1C9F26CE238881CF0090A955 /* BlockClubCalenderTests */; };
 		1C9F26D1238881D00090A955 /* BlockClubCalenderUITests in Resources */ = {isa = PBXBuildFile; fileRef = 1C9F26CF238881CF0090A955 /* BlockClubCalenderUITests */; };
 		1CFA07F22388894900F3CFD6 /* BlockClubCalenderTests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA07F12388894900F3CFD6 /* BlockClubCalenderTests2.swift */; };
@@ -128,7 +127,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1659CDAB794DD9EA2FCDBBB0 /* Pods_BlockClubCalender.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +343,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDC8A68E23803B4800BD4F95 /* Build configuration list for PBXNativeTarget "BlockClubCalender" */;
 			buildPhases = (
+				1CFA081123889D8500F3CFD6 /* ShellScript */,
 				FBD3363186D6E9F075414325 /* [CP] Check Pods Manifest.lock */,
 				DDC8A67623803B4800BD4F95 /* Sources */,
 				DDC8A67723803B4800BD4F95 /* Frameworks */,
@@ -450,6 +449,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_Root}/SwiftLint/swiftlint\"\n";
+		};
+		1CFA081123889D8500F3CFD6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		E3C393995C3D0515B02814A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -27,7 +27,7 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
        return textfield
    }()
     
-    private var LoginLabel: UILabel = {
+    private var loginLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Login"
@@ -35,21 +35,18 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
         label.textAlignment = .center
         return label
     }()
-    
     private var usernameView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = #colorLiteral(red: 0.9019607843, green: 0.9137254902, blue: 0.9176470588, alpha: 1)
         return view
     }()
-    
     private var passwordView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false 
         view.backgroundColor = #colorLiteral(red: 0.9019607843, green: 0.9137254902, blue: 0.9176470588, alpha: 1)
         return view
     }()
-    
     var memberController: MemberController?
     var user: User?
     //MARK: - lifeCycles
@@ -62,7 +59,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     @IBAction func loginButton(_ sender: UIButton) {
         guard let username = usernameTextfield.text,!username.isEmpty,
         let password = passwordTextfield.text, !password.isEmpty else { return }
-        
         
         memberController?.loginUser( username: username.lowercased(), password: password.lowercased(), completion: { (error) in
             if let error = error {
@@ -79,7 +75,6 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
                 }
             }
         })
-       
     }
     
     @IBAction func cancelButton(_ sender: UIButton) {
@@ -93,28 +88,26 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
               }
     }
     
-    
    private func configureViews() {
     usernameTextfield.delegate = self
     passwordTextfield.delegate = self
     view.addSubview(passwordView)
     view.addSubview(usernameView)
-    view.addSubview(LoginLabel)
+    view.addSubview(loginLabel)
     
-    LoginLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
-    LoginLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
-    LoginLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
+    loginLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20).isActive = true
+    loginLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
+    loginLabel.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
     
     usernameView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
     usernameView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
-    usernameView.topAnchor.constraint(equalToSystemSpacingBelow: LoginLabel.bottomAnchor, multiplier: 5).isActive = true
+    usernameView.topAnchor.constraint(equalToSystemSpacingBelow: loginLabel.bottomAnchor, multiplier: 5).isActive = true
     usernameView.heightAnchor.constraint(equalToConstant: 60).isActive = true
     
     passwordView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor, constant: 20).isActive = true
     passwordView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -20).isActive = true
     passwordView.topAnchor.constraint(equalToSystemSpacingBelow: usernameView.bottomAnchor, multiplier: 3).isActive = true
-    passwordView.heightAnchor.constraint(equalToConstant: 60).isActive = true
-    
+    passwordView.heightAnchor.constraint(equalToConstant: 60).isActive = true    
     usernameView.addSubview(usernameTextfield)
     usernameTextfield.leadingAnchor.constraint(equalTo: usernameView.safeAreaLayoutGuide.leadingAnchor, constant: 10).isActive = true
     usernameTextfield.trailingAnchor.constraint(equalTo: usernameView.safeAreaLayoutGuide.trailingAnchor,constant: -10).isActive = true

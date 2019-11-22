@@ -10,7 +10,6 @@ import UIKit
 
 class AddEventViewController: UIViewController {
 
-    
     //MARK: - properties
     
     @IBOutlet weak var titleTextfield: UITextField!
@@ -18,16 +17,13 @@ class AddEventViewController: UIViewController {
     @IBOutlet weak var dateTextfield: UITextField!
     @IBOutlet weak var descriptionTextfield: UITextView!
     var memberController: MemberController?
-    
     //MARK: - lifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViews()
     }
-    
     //MARK: - Actions 
     @IBAction func saveButton(_ sender: UIBarButtonItem) {
-        
       guard let title = titleTextfield.text,
             let address = addressTextfield.text,
             let dateString = dateTextfield.text,
@@ -42,10 +38,8 @@ class AddEventViewController: UIViewController {
           memberController?.createEvent(title, address: address, description: description, eventDate: Date())
             navigationController?.popViewController(animated: true)
         }
-
         
     }
-    
     func configureViews() {
         titleTextfield.text = ""
         addressTextfield.text = ""

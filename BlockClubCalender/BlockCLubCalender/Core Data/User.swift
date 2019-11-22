@@ -12,10 +12,8 @@ import CoreData
 extension User {
     
     var userRepresentation: UserRepresentation? {
-        
         guard let username = username, let password = password,
             let email = email else { return nil}
-        
         return UserRepresentation(username: username, password: password, email: email)
     }
     convenience init(firstName: String,
@@ -30,6 +28,5 @@ extension User {
         self.email = email
         self.firstName = firstName
         self.lastName = lastName
-        
     }
 }

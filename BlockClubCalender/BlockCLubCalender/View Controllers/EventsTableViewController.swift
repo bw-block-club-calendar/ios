@@ -10,11 +10,9 @@ import UIKit
 import CoreData
 
 class EventsTableViewController: UITableViewController,NSFetchedResultsControllerDelegate {
-
     
     //MARK: - properties
     var communityMemberController = MemberController()
-    
     lazy var fetchedResultsController: NSFetchedResultsController<Event> = {
         let fetchRequest: NSFetchRequest<Event> = Event.fetchRequest()
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
@@ -36,7 +34,6 @@ class EventsTableViewController: UITableViewController,NSFetchedResultsControlle
         configureViews()
         tableView.reloadData()
     }
-    
   private func configureViews() {
     if MemberController.bearer != nil {
         navigationController?.isNavigationBarHidden = false
@@ -56,7 +53,6 @@ class EventsTableViewController: UITableViewController,NSFetchedResultsControlle
         // #warning Incomplete implementation, return the number of rows
         return fetchedResultsController.sections?[section].numberOfObjects ?? 0
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       guard let cell = tableView.dequeueReusableCell(withIdentifier: "EventCell", for: indexPath) as? EventTableViewCell else
@@ -65,7 +61,6 @@ class EventsTableViewController: UITableViewController,NSFetchedResultsControlle
         cell.event = event
         return cell
     }
-    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
       if MemberController.bearer != nil {
@@ -75,7 +70,6 @@ class EventsTableViewController: UITableViewController,NSFetchedResultsControlle
             }
         }
     }
-
     
     // MARK: - Navigation
 
@@ -84,15 +78,12 @@ class EventsTableViewController: UITableViewController,NSFetchedResultsControlle
         if segue.identifier == "AddEventSegue" {
             guard let addEventVC = segue.destination as? AddEventViewController else { return }
             addEventVC.memberController = communityMemberController
-            
         } else if segue.identifier == "EventDetailSegue" {
-            guard let EventDetailVC = segue.destination as? EventDetailViewController,
+            guard let eventDetailVC = segue.destination as? EventDetailViewController,
             let indexPath = tableView.indexPathForSelectedRow else { return }
-            EventDetailVC.event = fetchedResultsController.object(at: indexPath)
-            
+            eventDetailVC.event = fetchedResultsController.object(at: indexPath)
         }
     }
-    
     func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.beginUpdates()
     }

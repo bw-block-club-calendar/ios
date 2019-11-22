@@ -10,7 +10,6 @@ import UIKit
 
 class EventDetailViewController: UIViewController {
 
-    
     //MARK: - properties
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
@@ -20,13 +19,10 @@ class EventDetailViewController: UIViewController {
             updateViews()
         }
     }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
        updateViews()
     }
-    
     private func updateViews() {
         guard isViewLoaded else { return }
         guard let event = event else { return configureViews()}
@@ -34,7 +30,6 @@ class EventDetailViewController: UIViewController {
         descriptionTextView.text = event.eventDescription
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "mm-dd-yyyy HH:mm"
-        
         guard let date = event.eventDate else  { return }
         let formatedDate = dateFormatter.string(from: date)
         dateLabel.text = "\(formatedDate)"
