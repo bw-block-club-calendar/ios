@@ -21,7 +21,6 @@
                                 <state key="normal" title="Done"/>
                                 <connections>
                                     <action selector="doneButton:" destination="IG3-Th-Fe2" eventType="touchUpInside" id="DJC-au-aEC"/>
-                                    <segue destination="WZw-D6-qsG" kind="unwind" unwindAction="unwindToProfile:" id="mGp-Ah-pJl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -36,7 +35,6 @@
                     <navigationItem key="navigationItem" id="iJ8-E8-cXX"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qW-df-fye" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="WZw-D6-qsG" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="934.78260869565224" y="99.776785714285708"/>
         </scene>

@@ -25,13 +25,7 @@ class MemberController {
       }
     
     func register(firstName: String, lastName: String, username: String, password: String, email:String, completion: @escaping(Error?) -> Void) {
-        MemberController.user = User(firstName: firstName,
-                        lastName: lastName,
-                        userName: username,
-                        password: password,
-                        email: email,
-                        context: CoreDataStack.shared.mainContext)
-           
+
          let registerURL = baseURL.appendingPathComponent("auth").appendingPathComponent("register")
            var request = URLRequest(url: registerURL)
            request.httpMethod = "POST"
@@ -48,7 +42,7 @@ class MemberController {
            request.httpBody = jsonData
            
            URLSession.shared.dataTask(with: request) { (data, response, error) in
-            if let response = response as? HTTPURLResponse, response.statusCode != 200 {
+            if let response = response as? HTTPURLResponse, response.statusCode != 201 {
                    completion(NSError(domain: "", code: response.statusCode, userInfo: nil))
                 return 
                }

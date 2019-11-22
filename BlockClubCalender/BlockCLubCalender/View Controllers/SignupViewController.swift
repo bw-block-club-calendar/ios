@@ -8,11 +8,15 @@
 
 import UIKit
 
+protocol createUserDelegate {
+    func CreateUser(_ user: User)
+}
 class SignupViewController: UIViewController,UITextFieldDelegate {
 
     //MARK: - Properties
     var memberController: MemberController?
-   
+    var delegate: createUserDelegate?
+    
     private var usernameTextfield: UITextField = {
            let textfield = UITextField()
            textfield.translatesAutoresizingMaskIntoConstraints = false
@@ -199,27 +203,17 @@ class SignupViewController: UIViewController,UITextFieldDelegate {
             let username = usernameTextfield.text, !username.isEmpty,
             let password = passwordTextfield.text, !password.isEmpty else { return }
         
+       
+        delegate?.CreateUser(User(firstName: firstname, lastName: lastname, userName: username, password: password, email: email,context: CoreDataStack.shared.mainContext))
         memberController?.register(firstName: firstname.lowercased(), lastName: lastname.lowercased(), username: username.lowercased(), password: password.lowercased(), email: email.lowercased(), completion: { (error) in
             if let error = error {
-                    NSLog("error logging in: \(error)")
-                    DispatchQueue.main.async {
-                        let alert = UIAlertController(title: "error", message: "we cant create your account at this time", preferredStyle: .alert)
-                        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-                        alert.addAction(action)
-                        self.present(alert, animated: true, completion: nil)
-                    }
-                } else {
-                DispatchQueue.main.async {
-                    self.dismiss(animated: true, completion: nil)
-                    }
-                }
-            })
+                NSLog("error registering new user: \(error)")
+            } else {
+               print("registration successful")
+            }
+        })
+        
         dismiss(animated: true, completion: nil)
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let profileVC = segue.destination as! ProfileViewController
-        profileVC.user = MemberController.user
     }
 }
 

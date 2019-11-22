@@ -11,7 +11,7 @@ struct User: Codable {
     let username: String
     let password: String
     let email: String
-    var userID: Int = 0
+   // let location: Location
     
 }
 
@@ -23,16 +23,38 @@ struct UserID: Codable {
     let id: Int
     
 }
+struct Location: Codable {
+   let name: String
+   let streetAddress: String
+   let city: String
+   let zipcode: String
+    let state: String
+    
+    enum codingKeys: String, CodingKey {
+        case name
+        case streetAddress = "street_address"
+        case city
+        case zipcode
+        case state
+    }
+}
+
+struct Profile: Codable {
+    let userID: Int
+    let firstName: String
+    let lastName: String
+    
+}
 
 
 class API {
     static var id: UserID?
     static var bearer: BearerToken?
+
     let baseURL = URL(string: "https://blockclubcal.herokuapp.com/api/")!
     
-    func register(firstName: String, lastName: String, username: String, password: String, email:String, completion: @escaping(Error?) -> Void = {_ in }) {
-        let user = User(firstName: firstName, lastName: lastName, username: username, password: password, email: email)
-        
+    func register(_ user: User, completion: @escaping(Error?) -> Void = {_ in }) {
+    
       let registerURL = baseURL.appendingPathComponent("auth").appendingPathComponent("register")
         var request = URLRequest(url: registerURL)
         request.httpMethod = "POST"
@@ -40,9 +62,9 @@ class API {
     
         let json = """
         {
-            "username" : "\(username)",
-            "password" : "\(password)",
-                "email" : "\(email)"
+            "username" : "\(user.username)",
+            "password" : "\(user.password)",
+            "email" : "\(user.email)"
         }
         """
         let jsonData = json.data(using: .utf8)
@@ -62,9 +84,9 @@ class API {
             do {
                 let decoder = JSONDecoder()
                 API.bearer = try decoder.decode(BearerToken.self, from: data)
-                print(API.bearer)
+                
                 API.id = try decoder.decode(UserID.self, from: data)
-                print(API.id)
+                
             } catch {
                 print("error decoding token and userid: \(error.localizedDescription)")
             }
@@ -100,7 +122,7 @@ class API {
             do {
                 let decoder = JSONDecoder()
                 API.bearer = try decoder.decode(BearerToken.self, from: data)
-                print(API.bearer)
+               
             } catch {
                 print("error: \(error)")
             }
@@ -108,40 +130,33 @@ class API {
     }
     
     func createProfile(forUser user: User) {
-        let profileURL = baseURL.appendingPathComponent("profile")
+        
+            guard let userID = API.id else { return }
+            let profileURL = baseURL.appendingPathComponent("profile")
+                
+                var request = URLRequest(url: profileURL)
+                request.httpMethod = "POST"
+                request.setValue("application/json", forHTTPHeaderField: "Content-Type")
             
-            var request = URLRequest(url: profileURL)
-            request.httpMethod = "POST"
-            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        
-            let json = """
-               {
-                   "username" : "",
-                   "password": ""
-               }
-               """
-               let jsonData = json.data(using: .utf8)
-               request.httpBody = jsonData
-               
-            URLSession.shared.dataTask(with: request) { (data, response, error) in
-                if let response = response as? HTTPURLResponse {
-                    print(response.statusCode)
-                }
-                if let error = error {
-                    print("error: \(error)")
-                }
-                
-                guard let data = data else { return }
-                
-                do {
-                    let decoder = JSONDecoder()
-                    API.bearer = try decoder.decode(BearerToken.self, from: data)
-                    print(API.bearer)
-                } catch {
-                    print("error: \(error)")
-                }
-            }.resume()
-        
+                let json = """
+                   {
+                        "user_id" : "\(userID.id)",
+                       "first_name" : "\(user.firstName)",
+                        "last_name": "\(user.lastName)"
+                   }
+                   """
+                   let jsonData = json.data(using: .utf8)
+                   request.httpBody = jsonData
+                   
+                URLSession.shared.dataTask(with: request) { (_ , response, error) in
+                    if let response = response as? HTTPURLResponse {
+                        print(response.statusCode)
+                    }
+                    if let error = error {
+                        print("error: \(error)")
+                    }
+                    
+                }.resume()
     }
     
     func createEvent(){}
@@ -150,10 +165,13 @@ class API {
 }
 
 let api = API()
-api.register(firstName: "brian", lastName: "vilchez", username: "brybry1992", password: "123456", email: "1992@gmail.com")
-//api.login("brybry1995", password: "123456")
 
+let location = Location(name: "home", streetAddress: "5 rio grande street", city: "west jordan", zipcode: "84088", state: "utah")
 
+let user = User(firstName: "chris", lastName: "hemsworth", username: "thor", password: "123456", email: "realThor@gmail.com")
+
+// api.register(user)
+api.createProfile(forUser: user)
 /*
  "user_id": 2,
  "first_name": "Test",
@@ -168,18 +186,3 @@ api.register(firstName: "brian", lastName: "vilchez", username: "brybry1992", pa
    "state": "MI"
    }
  */
-struct Location: Codable {
-   let name: String
-   let streetAddress: String
-   let city: String
-   let zipcode: String
-    let state: String 
-    
-}
-
-struct Profile: Codable {
-    let userID: Int
-    let firstName: String
-    let lastName: String
-    let location: Location
-}

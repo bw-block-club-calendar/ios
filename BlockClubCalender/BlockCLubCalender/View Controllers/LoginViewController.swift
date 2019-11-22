@@ -88,8 +88,10 @@ class LoginViewController: UIViewController,UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
           if segue.identifier == "SignupSegue" {
-                  guard let signUpVC = segue.destination as? SignupViewController else { return }
+                  guard let navC = segue.destination as? UINavigationController else { return }
+            guard let signUpVC = navC.viewControllers[0] as? SignupViewController else { return }
                   signUpVC.memberController = memberController
+                  signUpVC.delegate = self
               }
     }
     
@@ -142,4 +144,16 @@ extension LoginViewController {
         }
         return true
     }
+}
+
+extension LoginViewController: createUserDelegate {
+    func CreateUser(_ user: User) {
+        MemberController.user = user
+        usernameTextfield.text = user.username
+        passwordTextfield.text = user.password
+       // print(MemberController.user)
+    }
+    
+    
+    
 }
