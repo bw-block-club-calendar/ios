@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1659CDAB794DD9EA2FCDBBB0 /* Pods_BlockClubCalender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56815C7842927F229CB0286 /* Pods_BlockClubCalender.framework */; };
 		1C9F26D0238881D00090A955 /* BlockClubCalenderTests in Resources */ = {isa = PBXBuildFile; fileRef = 1C9F26CE238881CF0090A955 /* BlockClubCalenderTests */; };
 		1C9F26D1238881D00090A955 /* BlockClubCalenderUITests in Resources */ = {isa = PBXBuildFile; fileRef = 1C9F26CF238881CF0090A955 /* BlockClubCalenderUITests */; };
+		1CFA07F22388894900F3CFD6 /* BlockClubCalenderTests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA07F12388894900F3CFD6 /* BlockClubCalenderTests2.swift */; };
+		1CFA0806238889EC00F3CFD6 /* BlockClubCalenderUITests2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA0805238889EC00F3CFD6 /* BlockClubCalenderUITests2.swift */; };
+		1CFA080D23888A7F00F3CFD6 /* MDL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA07F92388896200F3CFD6 /* MDL.swift */; };
+		1CFA080E23888A8300F3CFD6 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFA07FB2388896600F3CFD6 /* MockData.swift */; };
+		1CFA0810238892A700F3CFD6 /* Pods_BlockClubCalender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56815C7842927F229CB0286 /* Pods_BlockClubCalender.framework */; };
+		D32AE5BFCB4A136129A8D70B /* Pods_BlockClubCalenderTests2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA5E8A5FACA6DE0048D4EAE4 /* Pods_BlockClubCalenderTests2.framework */; };
 		DD34165B2385F3E300359AC1 /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34165A2385F3E300359AC1 /* BearerToken.swift */; };
 		DD6622842383609900604838 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6622832383609900604838 /* LoginScreen.storyboard */; };
 		DD6622882383622C00604838 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6622872383622C00604838 /* Signup.storyboard */; };
@@ -34,9 +41,45 @@
 		DDC8A6A523805FE400BD4F95 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC8A6A423805FE400BD4F95 /* Event.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1CFA07F42388894900F3CFD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC8A67223803B4800BD4F95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDC8A67923803B4800BD4F95;
+			remoteInfo = BlockClubCalender;
+		};
+		1CFA0808238889EC00F3CFD6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDC8A67223803B4800BD4F95 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDC8A67923803B4800BD4F95;
+			remoteInfo = BlockClubCalender;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0B7DE4E4C62111D9E72CC83D /* Pods-BlockClubCalender.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockClubCalender.release.xcconfig"; path = "Target Support Files/Pods-BlockClubCalender/Pods-BlockClubCalender.release.xcconfig"; sourceTree = "<group>"; };
+		0FFA598F16E38D55A720176B /* Pods-BlockClubCalender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockClubCalender.debug.xcconfig"; path = "Target Support Files/Pods-BlockClubCalender/Pods-BlockClubCalender.debug.xcconfig"; sourceTree = "<group>"; };
+		16361FC07453AFAE8B9CE6B4 /* Pods-BlockClubCalender-BlockClubCalenderUITests2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockClubCalender-BlockClubCalenderUITests2.debug.xcconfig"; path = "Target Support Files/Pods-BlockClubCalender-BlockClubCalenderUITests2/Pods-BlockClubCalender-BlockClubCalenderUITests2.debug.xcconfig"; sourceTree = "<group>"; };
 		1C9F26CE238881CF0090A955 /* BlockClubCalenderTests */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BlockClubCalenderTests; path = BlockCLubCalender/BlockClubCalenderTests; sourceTree = SOURCE_ROOT; };
 		1C9F26CF238881CF0090A955 /* BlockClubCalenderUITests */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BlockClubCalenderUITests; path = BlockCLubCalender/BlockClubCalenderUITests; sourceTree = SOURCE_ROOT; };
+		1CFA07EF2388894900F3CFD6 /* BlockClubCalenderTests2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockClubCalenderTests2.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CFA07F12388894900F3CFD6 /* BlockClubCalenderTests2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockClubCalenderTests2.swift; sourceTree = "<group>"; };
+		1CFA07F32388894900F3CFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CFA07F92388896200F3CFD6 /* MDL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDL.swift; sourceTree = "<group>"; };
+		1CFA07FB2388896600F3CFD6 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		1CFA07FD2388897900F3CFD6 /* BadMockData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = BadMockData.json; sourceTree = "<group>"; };
+		1CFA07FE2388897D00F3CFD6 /* GoodMockData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GoodMockData.json; sourceTree = "<group>"; };
+		1CFA0803238889EC00F3CFD6 /* BlockClubCalenderUITests2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlockClubCalenderUITests2.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CFA0805238889EC00F3CFD6 /* BlockClubCalenderUITests2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockClubCalenderUITests2.swift; sourceTree = "<group>"; };
+		1CFA0807238889EC00F3CFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5289E650F857D29784123077 /* Pods_BlockClubCalender_BlockClubCalenderUITests2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockClubCalender_BlockClubCalenderUITests2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DC3875D2829945CD1101F44 /* Pods-BlockClubCalenderTests2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockClubCalenderTests2.debug.xcconfig"; path = "Target Support Files/Pods-BlockClubCalenderTests2/Pods-BlockClubCalenderTests2.debug.xcconfig"; sourceTree = "<group>"; };
+		ACBB72D8A83822171C70E1E8 /* Pods-BlockClubCalender-BlockClubCalenderUITests2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockClubCalender-BlockClubCalenderUITests2.release.xcconfig"; path = "Target Support Files/Pods-BlockClubCalender-BlockClubCalenderUITests2/Pods-BlockClubCalender-BlockClubCalenderUITests2.release.xcconfig"; sourceTree = "<group>"; };
+		B0BF7F665F1455E9897EB2A1 /* Pods-BlockClubCalenderTests2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BlockClubCalenderTests2.release.xcconfig"; path = "Target Support Files/Pods-BlockClubCalenderTests2/Pods-BlockClubCalenderTests2.release.xcconfig"; sourceTree = "<group>"; };
+		B56815C7842927F229CB0286 /* Pods_BlockClubCalender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockClubCalender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA5E8A5FACA6DE0048D4EAE4 /* Pods_BlockClubCalenderTests2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BlockClubCalenderTests2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD34165A2385F3E300359AC1 /* BearerToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
 		DD6622832383609900604838 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		DD6622872383622C00604838 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
@@ -65,21 +108,87 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1CFA07EC2388894900F3CFD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D32AE5BFCB4A136129A8D70B /* Pods_BlockClubCalenderTests2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CFA0800238889EC00F3CFD6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFA0810238892A700F3CFD6 /* Pods_BlockClubCalender.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDC8A67723803B4800BD4F95 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1659CDAB794DD9EA2FCDBBB0 /* Pods_BlockClubCalender.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CFA07F02388894900F3CFD6 /* BlockClubCalenderTests2 */ = {
+			isa = PBXGroup;
+			children = (
+				1CFA07F12388894900F3CFD6 /* BlockClubCalenderTests2.swift */,
+				1CFA07FD2388897900F3CFD6 /* BadMockData.json */,
+				1CFA07FE2388897D00F3CFD6 /* GoodMockData.json */,
+				1CFA07F32388894900F3CFD6 /* Info.plist */,
+			);
+			path = BlockClubCalenderTests2;
+			sourceTree = "<group>";
+		};
+		1CFA0804238889EC00F3CFD6 /* BlockClubCalenderUITests2 */ = {
+			isa = PBXGroup;
+			children = (
+				1CFA0805238889EC00F3CFD6 /* BlockClubCalenderUITests2.swift */,
+				1CFA07FB2388896600F3CFD6 /* MockData.swift */,
+				1CFA07F92388896200F3CFD6 /* MDL.swift */,
+				1CFA0807238889EC00F3CFD6 /* Info.plist */,
+			);
+			path = BlockClubCalenderUITests2;
+			sourceTree = "<group>";
+		};
+		1E7A4A9A6350F470064935F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B56815C7842927F229CB0286 /* Pods_BlockClubCalender.framework */,
+				5289E650F857D29784123077 /* Pods_BlockClubCalender_BlockClubCalenderUITests2.framework */,
+				CA5E8A5FACA6DE0048D4EAE4 /* Pods_BlockClubCalenderTests2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2F0DCA7654FCE3D50E8614AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FFA598F16E38D55A720176B /* Pods-BlockClubCalender.debug.xcconfig */,
+				0B7DE4E4C62111D9E72CC83D /* Pods-BlockClubCalender.release.xcconfig */,
+				16361FC07453AFAE8B9CE6B4 /* Pods-BlockClubCalender-BlockClubCalenderUITests2.debug.xcconfig */,
+				ACBB72D8A83822171C70E1E8 /* Pods-BlockClubCalender-BlockClubCalenderUITests2.release.xcconfig */,
+				5DC3875D2829945CD1101F44 /* Pods-BlockClubCalenderTests2.debug.xcconfig */,
+				B0BF7F665F1455E9897EB2A1 /* Pods-BlockClubCalenderTests2.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DDC8A67123803B4800BD4F95 = {
 			isa = PBXGroup;
 			children = (
 				DDC8A67C23803B4800BD4F95 /* BlockCLubCalender */,
+				1CFA07F02388894900F3CFD6 /* BlockClubCalenderTests2 */,
+				1CFA0804238889EC00F3CFD6 /* BlockClubCalenderUITests2 */,
 				DDC8A67B23803B4800BD4F95 /* Products */,
+				2F0DCA7654FCE3D50E8614AE /* Pods */,
+				1E7A4A9A6350F470064935F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				DDC8A67A23803B4800BD4F95 /* BlockClubCalender.app */,
+				1CFA07EF2388894900F3CFD6 /* BlockClubCalenderTests2.xctest */,
+				1CFA0803238889EC00F3CFD6 /* BlockClubCalenderUITests2.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -191,10 +302,50 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		1CFA07EE2388894900F3CFD6 /* BlockClubCalenderTests2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CFA07F62388894900F3CFD6 /* Build configuration list for PBXNativeTarget "BlockClubCalenderTests2" */;
+			buildPhases = (
+				F56088B3225310D1C19BBCEB /* [CP] Check Pods Manifest.lock */,
+				1CFA07EB2388894900F3CFD6 /* Sources */,
+				1CFA07EC2388894900F3CFD6 /* Frameworks */,
+				1CFA07ED2388894900F3CFD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CFA07F52388894900F3CFD6 /* PBXTargetDependency */,
+			);
+			name = BlockClubCalenderTests2;
+			productName = BlockClubCalenderTests2;
+			productReference = 1CFA07EF2388894900F3CFD6 /* BlockClubCalenderTests2.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1CFA0802238889EC00F3CFD6 /* BlockClubCalenderUITests2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CFA080A238889EC00F3CFD6 /* Build configuration list for PBXNativeTarget "BlockClubCalenderUITests2" */;
+			buildPhases = (
+				E3C393995C3D0515B02814A5 /* [CP] Check Pods Manifest.lock */,
+				1CFA080F23888B9F00F3CFD6 /* ShellScript */,
+				1CFA07FF238889EC00F3CFD6 /* Sources */,
+				1CFA0800238889EC00F3CFD6 /* Frameworks */,
+				1CFA0801238889EC00F3CFD6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CFA0809238889EC00F3CFD6 /* PBXTargetDependency */,
+			);
+			name = BlockClubCalenderUITests2;
+			productName = BlockClubCalenderUITests2;
+			productReference = 1CFA0803238889EC00F3CFD6 /* BlockClubCalenderUITests2.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		DDC8A67923803B4800BD4F95 /* BlockClubCalender */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDC8A68E23803B4800BD4F95 /* Build configuration list for PBXNativeTarget "BlockClubCalender" */;
 			buildPhases = (
+				FBD3363186D6E9F075414325 /* [CP] Check Pods Manifest.lock */,
 				DDC8A67623803B4800BD4F95 /* Sources */,
 				DDC8A67723803B4800BD4F95 /* Frameworks */,
 				DDC8A67823803B4800BD4F95 /* Resources */,
@@ -218,6 +369,14 @@
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "brian vilchez";
 				TargetAttributes = {
+					1CFA07EE2388894900F3CFD6 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = DDC8A67923803B4800BD4F95;
+					};
+					1CFA0802238889EC00F3CFD6 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = DDC8A67923803B4800BD4F95;
+					};
 					DDC8A67923803B4800BD4F95 = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
@@ -237,11 +396,27 @@
 			projectRoot = "";
 			targets = (
 				DDC8A67923803B4800BD4F95 /* BlockClubCalender */,
+				1CFA07EE2388894900F3CFD6 /* BlockClubCalenderTests2 */,
+				1CFA0802238889EC00F3CFD6 /* BlockClubCalenderUITests2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1CFA07ED2388894900F3CFD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CFA0801238889EC00F3CFD6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDC8A67823803B4800BD4F95 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,7 +433,111 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CFA080F23888B9F00F3CFD6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_Root}/SwiftLint/swiftlint\"\n";
+		};
+		E3C393995C3D0515B02814A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlockClubCalender-BlockClubCalenderUITests2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F56088B3225310D1C19BBCEB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlockClubCalenderTests2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBD3363186D6E9F075414325 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BlockClubCalender-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1CFA07EB2388894900F3CFD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFA07F22388894900F3CFD6 /* BlockClubCalenderTests2.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CFA07FF238889EC00F3CFD6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFA0806238889EC00F3CFD6 /* BlockClubCalenderUITests2.swift in Sources */,
+				1CFA080E23888A8300F3CFD6 /* MockData.swift in Sources */,
+				1CFA080D23888A7F00F3CFD6 /* MDL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDC8A67623803B4800BD4F95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,6 +565,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		1CFA07F52388894900F3CFD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDC8A67923803B4800BD4F95 /* BlockClubCalender */;
+			targetProxy = 1CFA07F42388894900F3CFD6 /* PBXContainerItemProxy */;
+		};
+		1CFA0809238889EC00F3CFD6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDC8A67923803B4800BD4F95 /* BlockClubCalender */;
+			targetProxy = 1CFA0808238889EC00F3CFD6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		DDC8A68323803B4800BD4F95 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -306,6 +598,84 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		1CFA07F72388894900F3CFD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DC3875D2829945CD1101F44 /* Pods-BlockClubCalenderTests2.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BlockClubCalenderTests2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerryhaaser.BlockClubCalenderTests2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlockClubCalender.app/BlockClubCalender";
+			};
+			name = Debug;
+		};
+		1CFA07F82388894900F3CFD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0BF7F665F1455E9897EB2A1 /* Pods-BlockClubCalenderTests2.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BlockClubCalenderTests2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerryhaaser.BlockClubCalenderTests2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlockClubCalender.app/BlockClubCalender";
+			};
+			name = Release;
+		};
+		1CFA080B238889EC00F3CFD6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16361FC07453AFAE8B9CE6B4 /* Pods-BlockClubCalender-BlockClubCalenderUITests2.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BlockClubCalenderUITests2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerryhaaser.BlockClubCalenderUITests2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlockClubCalender;
+			};
+			name = Debug;
+		};
+		1CFA080C238889EC00F3CFD6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACBB72D8A83822171C70E1E8 /* Pods-BlockClubCalender-BlockClubCalenderUITests2.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BlockClubCalenderUITests2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jerryhaaser.BlockClubCalenderUITests2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlockClubCalender;
+			};
+			name = Release;
+		};
 		DDC8A68C23803B4800BD4F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -422,6 +792,7 @@
 		};
 		DDC8A68F23803B4800BD4F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FFA598F16E38D55A720176B /* Pods-BlockClubCalender.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,6 +811,7 @@
 		};
 		DDC8A69023803B4800BD4F95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B7DE4E4C62111D9E72CC83D /* Pods-BlockClubCalender.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -459,6 +831,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1CFA07F62388894900F3CFD6 /* Build configuration list for PBXNativeTarget "BlockClubCalenderTests2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CFA07F72388894900F3CFD6 /* Debug */,
+				1CFA07F82388894900F3CFD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CFA080A238889EC00F3CFD6 /* Build configuration list for PBXNativeTarget "BlockClubCalenderUITests2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CFA080B238889EC00F3CFD6 /* Debug */,
+				1CFA080C238889EC00F3CFD6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DDC8A67523803B4800BD4F95 /* Build configuration list for PBXProject "BlockClubCalender" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
