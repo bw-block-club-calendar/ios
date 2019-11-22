@@ -38,7 +38,6 @@ class APIController {
         
         var request = URLRequest(url: registerURL)
         request.httpMethod = "POST"
-       // request.setValue("accessToken", forHTTPHeaderField: "Authorization")
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         do {
             let jsonEncoder = JSONEncoder()

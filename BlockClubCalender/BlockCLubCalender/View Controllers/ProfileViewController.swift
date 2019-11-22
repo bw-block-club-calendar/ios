@@ -17,6 +17,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var emailLabel1: UILabel!
     @IBOutlet weak var SigninButton: UIButton!
     var memberController = MemberController()
+    
+    
     var user: User? {
         didSet{
             updateViews()
@@ -29,11 +31,19 @@ class ProfileViewController: UIViewController {
         updateViews()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if MemberController.bearer != nil {
+            SigninButton.setTitle("Sign out", for: .normal)
+        } else if MemberController.bearer == nil {
+            SigninButton.setTitle("Sign in", for: .normal)
+        }
+    }
     private func updateViews() {
-        guard let user = user else { return  configureViews()}
+        guard let user = MemberController.user else { return  configureViews()}
         nameLabel.isHidden = false
         emailLabel.isHidden = false
-        SigninButton.setTitle("Sign out", for: .normal)
         nameLabel.text = user.username
         emailLabel.text = user.email
     }
@@ -48,11 +58,21 @@ class ProfileViewController: UIViewController {
         tabBarController?.tabBar.isTranslucent = true
     }
   
+    @IBAction func signinButton(_ sender: UIButton) {
+        if MemberController.bearer != nil {
+            memberController.signOut()
+        } 
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "LoginSegue" {
             guard let LoginVC = segue.destination as? LoginViewController else { return }
             LoginVC.memberController = memberController
             LoginVC.user = user
         }
+    }
+    
+    @IBAction func unwindToProfile(_ sender: UIStoryboardSegue) {
+        
     }
 }
