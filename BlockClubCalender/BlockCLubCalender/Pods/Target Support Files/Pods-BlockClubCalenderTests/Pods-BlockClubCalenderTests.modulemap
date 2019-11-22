@@ -1,0 +1,6 @@
+framework module Pods_BlockClubCalenderTests {
+  umbrella header "Pods-BlockClubCalenderTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

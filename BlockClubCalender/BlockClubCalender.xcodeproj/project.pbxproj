@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C9F26D0238881D00090A955 /* BlockClubCalenderTests in Resources */ = {isa = PBXBuildFile; fileRef = 1C9F26CE238881CF0090A955 /* BlockClubCalenderTests */; };
+		1C9F26D1238881D00090A955 /* BlockClubCalenderUITests in Resources */ = {isa = PBXBuildFile; fileRef = 1C9F26CF238881CF0090A955 /* BlockClubCalenderUITests */; };
 		DD34165B2385F3E300359AC1 /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34165A2385F3E300359AC1 /* BearerToken.swift */; };
 		DD6622842383609900604838 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6622832383609900604838 /* LoginScreen.storyboard */; };
 		DD6622882383622C00604838 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6622872383622C00604838 /* Signup.storyboard */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C9F26CE238881CF0090A955 /* BlockClubCalenderTests */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BlockClubCalenderTests; path = BlockCLubCalender/BlockClubCalenderTests; sourceTree = SOURCE_ROOT; };
+		1C9F26CF238881CF0090A955 /* BlockClubCalenderUITests */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = BlockClubCalenderUITests; path = BlockCLubCalender/BlockClubCalenderUITests; sourceTree = SOURCE_ROOT; };
 		DD34165A2385F3E300359AC1 /* BearerToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
 		DD6622832383609900604838 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		DD6622872383622C00604838 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 		DDC8A67C23803B4800BD4F95 /* BlockCLubCalender */ = {
 			isa = PBXGroup;
 			children = (
+				1C9F26CE238881CF0090A955 /* BlockClubCalenderTests */,
+				1C9F26CF238881CF0090A955 /* BlockClubCalenderUITests */,
 				DDC8A69723803DAA00BD4F95 /* Storyboards */,
 				DDC8A69623803D9400BD4F95 /* Resources */,
 				DDC8A69523803D5900BD4F95 /* Extensions */,
@@ -244,6 +250,8 @@
 				DDC8A68723803B4800BD4F95 /* Assets.xcassets in Resources */,
 				DD6622842383609900604838 /* LoginScreen.storyboard in Resources */,
 				DD6622882383622C00604838 /* Signup.storyboard in Resources */,
+				1C9F26D1238881D00090A955 /* BlockClubCalenderUITests in Resources */,
+				1C9F26D0238881D00090A955 /* BlockClubCalenderTests in Resources */,
 				DDC8A68523803B4800BD4F95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
