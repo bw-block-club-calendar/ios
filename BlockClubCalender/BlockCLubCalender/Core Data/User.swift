@@ -18,15 +18,18 @@ extension User {
         
         return UserRepresentation(username: username, password: password, email: email)
     }
-    convenience init(username: String,
+    convenience init(firstName: String,
+                     lastName: String,
+                     userName: String,
                      password: String,
-                     email: String = "",
+                     email: String,
                      context: NSManagedObjectContext = CoreDataStack.shared.mainContext){
         self.init(context: context)
-        self.username = username
+        self.username = userName
         self.password = password
         self.email = email
-    
+        self.firstName = firstName
+        self.lastName = lastName
         
     }
 }

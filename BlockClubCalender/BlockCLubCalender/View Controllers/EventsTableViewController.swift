@@ -28,12 +28,21 @@ class EventsTableViewController: UITableViewController,NSFetchedResultsControlle
     //MARK: - lifeCycles
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        configureViews()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        configureViews()
         tableView.reloadData()
+    }
+    
+  private func configureViews() {
+    if MemberController.bearer != nil {
+        navigationController?.isNavigationBarHidden = false
+    } else if MemberController.bearer == nil {
+        navigationController?.isNavigationBarHidden = true
+    }
     }
 
         // MARK: - Table view data source
@@ -59,10 +68,12 @@ class EventsTableViewController: UITableViewController,NSFetchedResultsControlle
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+      if MemberController.bearer != nil {
         if editingStyle == .delete {
-            let event = fetchedResultsController.object(at: indexPath)
-            communityMemberController.deleteEvent(event)
-        }    
+            let event = self.fetchedResultsController.object(at: indexPath)
+            self.communityMemberController.deleteEvent(event)
+            }
+        }
     }
 
     

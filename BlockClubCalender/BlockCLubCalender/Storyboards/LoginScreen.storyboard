@@ -30,7 +30,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Signup"/>
                                 <connections>
-                                    <segue destination="6Ad-ea-Oup" kind="presentation" identifier="SignupSegue" id="5Om-Ge-1Ny"/>
+                                    <segue destination="6Ad-ea-Oup" kind="presentation" identifier="SignupSegue" modalPresentationStyle="fullScreen" id="5Om-Ge-1Ny"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk7-62-rhV">
