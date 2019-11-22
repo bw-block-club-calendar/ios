@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P7N-Fs-gEs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="QRP-Th-ynn">
+            <objects>
+                <viewController id="P7N-Fs-gEs" customClass="LoginViewController" customModule="BlockClubCalender" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vQs-FU-IA8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A Human-Standing" translatesAutoresizingMaskIntoConstraints="NO" id="Ny0-76-x2z">
+                                <rect key="frame" x="20" y="419" width="374" height="423"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ny0-76-x2z" secondAttribute="height" multiplier="374:423" id="1Xk-1k-6WD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKS-qh-zRa">
+                                <rect key="frame" x="358" y="45" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azb-rq-RfV">
+                                <rect key="frame" x="165" y="362" width="84" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Signup"/>
+                                <connections>
+                                    <segue destination="6Ad-ea-Oup" kind="presentation" identifier="SignupSegue" modalPresentationStyle="fullScreen" id="5Om-Ge-1Ny"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk7-62-rhV">
+                                <rect key="frame" x="165" y="310" width="84" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="loginButton:" destination="P7N-Fs-gEs" eventType="touchUpInside" id="683-YY-USO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dM9-mF-w0r">
+                                <rect key="frame" x="379.5" y="54" width="24.5" height="23.5"/>
+                                <state key="normal" image="escape" catalog="system"/>
+                                <connections>
+                                    <action selector="cancelButton:" destination="P7N-Fs-gEs" eventType="touchUpInside" id="4uc-Gb-R0b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Azb-rq-RfV" firstAttribute="leading" secondItem="p1O-1g-dsM" secondAttribute="leading" constant="165" id="7GS-iQ-CKd"/>
+                            <constraint firstItem="Azb-rq-RfV" firstAttribute="top" secondItem="Fk7-62-rhV" secondAttribute="bottom" constant="10" id="Arf-Cx-ONt"/>
+                            <constraint firstItem="p1O-1g-dsM" firstAttribute="bottom" secondItem="Ny0-76-x2z" secondAttribute="bottom" constant="20" id="GmK-Gd-3wC"/>
+                            <constraint firstItem="Fk7-62-rhV" firstAttribute="leading" secondItem="p1O-1g-dsM" secondAttribute="leading" constant="165" id="Gpr-ec-p7L"/>
+                            <constraint firstItem="Ny0-76-x2z" firstAttribute="leading" secondItem="p1O-1g-dsM" secondAttribute="leading" constant="20" id="Tm4-n6-HCb"/>
+                            <constraint firstItem="dM9-mF-w0r" firstAttribute="top" secondItem="p1O-1g-dsM" secondAttribute="top" constant="10" id="csj-Cb-pGY"/>
+                            <constraint firstItem="p1O-1g-dsM" firstAttribute="trailing" secondItem="Ny0-76-x2z" secondAttribute="trailing" constant="20" id="dp8-id-cGp"/>
+                            <constraint firstItem="p1O-1g-dsM" firstAttribute="trailing" secondItem="Azb-rq-RfV" secondAttribute="trailing" constant="165" id="hGi-S0-6cD"/>
+                            <constraint firstItem="p1O-1g-dsM" firstAttribute="trailing" secondItem="Fk7-62-rhV" secondAttribute="trailing" constant="165" id="pl2-EN-CZk"/>
+                            <constraint firstItem="p1O-1g-dsM" firstAttribute="trailing" secondItem="dM9-mF-w0r" secondAttribute="trailing" constant="10" id="ubE-mC-xC7"/>
+                            <constraint firstItem="Ny0-76-x2z" firstAttribute="top" secondItem="Azb-rq-RfV" secondAttribute="bottom" constant="15" id="zvi-5a-T7d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p1O-1g-dsM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J8e-VC-bvy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7.2463768115942031" y="-54.241071428571423"/>
+        </scene>
+        <!--Signup-->
+        <scene sceneID="m0T-PW-83Z">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Signup" id="6Ad-ea-Oup" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DZT-vS-FXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="755" y="-50"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="A Human-Standing" width="300" height="426"/>
+        <image name="escape" catalog="system" width="64" height="60"/>
+    </resources>
+</document>
