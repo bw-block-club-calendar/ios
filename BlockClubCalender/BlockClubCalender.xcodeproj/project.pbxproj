@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD21D34223879882006FF20A /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD21D34123879882006FF20A /* Token.swift */; };
 		DD34165B2385F3E300359AC1 /* BearerToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD34165A2385F3E300359AC1 /* BearerToken.swift */; };
 		DD6622842383609900604838 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6622832383609900604838 /* LoginScreen.storyboard */; };
 		DD6622882383622C00604838 /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD6622872383622C00604838 /* Signup.storyboard */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DD21D34123879882006FF20A /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		DD34165A2385F3E300359AC1 /* BearerToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BearerToken.swift; sourceTree = "<group>"; };
 		DD6622832383609900604838 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
 		DD6622872383622C00604838 /* Signup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Signup.storyboard; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				DD7779DF2384FBBD00AABF66 /* BlockClubCalender.xcdatamodeld */,
+				DD21D34123879882006FF20A /* Token.swift */,
 				DDC8A69B238043CC00BD4F95 /* CoreDataStack.swift */,
 				DDAD1EB62386E35E00E348D1 /* User.swift */,
 				DDC8A6A423805FE400BD4F95 /* Event.swift */,
@@ -270,6 +273,7 @@
 				DD7779DE23849C5D00AABF66 /* EventDetailViewController.swift in Sources */,
 				DDC8A68023803B4800BD4F95 /* SceneDelegate.swift in Sources */,
 				DD66229223839E3400604838 /* SignupViewController.swift in Sources */,
+				DD21D34223879882006FF20A /* Token.swift in Sources */,
 				DDC8A69C238043CC00BD4F95 /* CoreDataStack.swift in Sources */,
 				DDAD1EBB2386EB7200E348D1 /* UserRepresentation.swift in Sources */,
 				DDAD1EB72386E35E00E348D1 /* User.swift in Sources */,

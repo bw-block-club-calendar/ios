@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import CoreData
 class ProfileViewController: UIViewController {
 
     //MARK: - Properties
@@ -17,7 +17,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var emailLabel1: UILabel!
     @IBOutlet weak var SigninButton: UIButton!
     var memberController = MemberController()
-    
+
     
     var user: User? {
         didSet{
@@ -41,7 +41,8 @@ class ProfileViewController: UIViewController {
         }
     }
     private func updateViews() {
-        guard let user = MemberController.user else { return  configureViews()}
+        guard let user = user else { return  configureViews()}
+        print(user.username)
         nameLabel.isHidden = false
         emailLabel.isHidden = false
         nameLabel.text = user.username

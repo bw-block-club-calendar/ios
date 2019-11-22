@@ -7,16 +7,112 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "04862973-965E-400E-9AAE-9F1C4DB14A79"
-            shouldBeEnabled = "No"
+            uuid = "1D0D6591-06A9-4987-AFBC-811E0BFA4294"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BlockCLubCalender/View Controllers/AddEventViewController.swift"
+            filePath = "BlockCLubCalender/View Controllers/LoginViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "saveButton(_:)"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
+            landmarkName = "CreateUser(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DA5A037F-9EA4-47B0-BF9D-720A926C8C8E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlockCLubCalender/Model Controllers/CommunityMemberController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "register(firstName:lastName:username:password:email:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C21D97D1-1EB3-410A-9FF6-F8EDBB93A97B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlockCLubCalender/View Controllers/SignupViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
+            landmarkName = "doneButton(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C21D97D1-1EB3-410A-9FF6-F8EDBB93A97B - 8322d204bb0c197"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BlockClubCalender.SignupViewController.doneButton(__C.UIButton) -&gt; ()"
+                  moduleName = "BlockClubCalender"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brianvilchez/Documents/xcode/ios/BlockClubCalender/BlockCLubCalender/View%20Controllers/SignupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "208"
+                  endingLineNumber = "208"
+                  offsetFromSymbolStart = "2618">
+               </Location>
+               <Location
+                  uuid = "C21D97D1-1EB3-410A-9FF6-F8EDBB93A97B - d6fdaba824fb649"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BlockClubCalender.SignupViewController.doneButton(__C.UIButton) -&gt; ()"
+                  moduleName = "BlockClubCalender"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/brianvilchez/Documents/xcode/ios/BlockClubCalender/BlockCLubCalender/View%20Controllers/SignupViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "209"
+                  endingLineNumber = "209"
+                  offsetFromSymbolStart = "95">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6DB75758-5201-4F80-BA78-DFDF38440E76"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlockCLubCalender/View Controllers/SignupViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "200"
+            endingLineNumber = "200"
+            landmarkName = "doneButton(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C124D06-CB11-4AFF-8427-DE4CBF2A583E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BlockCLubCalender/View Controllers/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "prepare(for:sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
